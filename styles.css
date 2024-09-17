@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Light background color for the page */
+}
+
+.navbar {
+    width: 100%;
+    background-color: #2196f3; /* Blue background for navbar */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 15px 0; /* Padding for navbar */
+    position: fixed; /* Fix the navbar at the top */
+    top: 0; /* Position at the top */
+    left: 0;
+    z-index: 1000; /* Ensure navbar is above other content */
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 1.5em; /* Adjust the font size as needed */
+}
+
+.calculator-container {
+    margin-top: 70px; /* Margin to account for the fixed navbar */
+}
+
+.calculator {
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    background: #fff;
+    width: 320px; /* Adjust width to fit more buttons */
+}
+
+.display {
+    background: #222; /* Dark background for the display */
+    color: #fff; /* White text for the display */
+    padding: 20px;
+    text-align: right;
+    font-size: 2em;
+    border-radius: 10px 10px 0 0;
+    height: 80px; /* Adjust height as needed */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px; /* Small gap between buttons */
+}
+
+.btn {
+    border: 1px solid #ddd;
+    background: #f5f5f5; /* Light grey background for buttons */
+    color: #333; /* Dark text color for buttons */
+    padding: 15px; /* Slightly smaller padding */
+    font-size: 1.2em; /* Adjust font size */
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #e0e0e0; /* Slightly darker grey on hover */
+}
+
+.btn:active {
+    background: #ccc; /* Even darker grey when pressed */
+}
+
+/* Styling for operator buttons */
+.btn.operator {
+    background: #ff9500; /* Orange background for operators */
+    color: #fff; /* White text for operators */
+}
+
+.btn.operator:hover {
+    background: #e89e1c; /* Darker orange on hover */
+}
+
+.btn.operator:active {
+    background: #d87b00; /* Even darker orange when pressed */
+}
+
+/* Styling for scient
